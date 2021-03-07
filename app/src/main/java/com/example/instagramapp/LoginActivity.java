@@ -26,6 +26,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        if(ParseUser.getCurrentUser() != null){
+            goMainActivity();
+        }
+
         usernameET = findViewById(R.id.username);
         passwordET = findViewById(R.id.password);
         loginBtn = findViewById(R.id.login);
@@ -46,11 +50,11 @@ public class LoginActivity extends AppCompatActivity {
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
-                if(e != null){
+                if(e != null) {
                     Log.e(tag, "Login failed", e);
+                    Toast.makeText(getApplicationContext(), "Incorrect username/password", Toast.LENGTH_LONG).show();
                     return;
                 }
-
                 goMainActivity();
                 Toast.makeText(getApplicationContext(), "welcome", Toast.LENGTH_LONG).show();
             }
@@ -60,6 +64,5 @@ public class LoginActivity extends AppCompatActivity {
     private void goMainActivity(){
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
-
     }
 }
