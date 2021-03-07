@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 for(Post post : posts){
-                    Log.i(tag, "post: " + post.getDescription() + ", by " + post.getUser());
+                    Log.i(tag, "post: " + post.getDescription() + ", by " + post.getUser().getUsername());
                 }
             }
         });
