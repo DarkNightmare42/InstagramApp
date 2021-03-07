@@ -45,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUser(String username, String password) {
-        Log.i(tag, "user logged in");
         // TODO : initiate successful logged in experience
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
@@ -55,6 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Incorrect username/password", Toast.LENGTH_LONG).show();
                     return;
                 }
+                Log.i(tag, "user logged in");
                 goMainActivity();
                 Toast.makeText(getApplicationContext(), "welcome", Toast.LENGTH_LONG).show();
             }
