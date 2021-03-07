@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.e(tag, "not null!", e);
                     return;
                 }
-                for(Post post : posts){
+                for(Post post : posts){ //added username here
                     Log.i(tag, "post: " + post.getDescription() + ", by " + post.getUser().getUsername());
                 }
             }
