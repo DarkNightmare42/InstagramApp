@@ -2,10 +2,11 @@
     <string name="app_name">InstagramApp</string>
     <string name="prompt_email">Username</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign Up</string>
     <string name="description">Description</string>
     <string name="upload">Camera</string>
     <string name="post">Post</string>
     <string name="post_button">post</string>
+    <string name="logout">Logout</string>
 </resources>
