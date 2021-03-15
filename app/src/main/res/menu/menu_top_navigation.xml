@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/camera_shadow_fill"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/nav_logo_whiteout"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/direct"
+        app:showAsAction="always" />
+</menu>

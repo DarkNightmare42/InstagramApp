@@ -52,7 +52,7 @@
         android:id="@+id/signUpBtn"
         android:layout_width="262dp"
         android:layout_height="48dp"
-        android:background="#2DD351"
+        android:background="#2AD850"
         android:text="@string/action_sign_in_short"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
